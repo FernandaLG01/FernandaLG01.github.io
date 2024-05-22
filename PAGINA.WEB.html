@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda García</title>
+    <link rel="icon" href="D:\PAGINA_WEB\FLAVICON\favicon-16x16.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2AB9B;
+        }
+        header {
+            background-color: #D97777;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 60px;
+        }
+        nav {
+            background-color: #BFBD9B;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            background-color: #8C2B45;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #F1F2C4;
+            color: white;
+            cursor: pointer;
+        }
+        .menu-toggle {
+            display: none;
+            background-color: #8C2B45;
+            color: white;
+            border: none;
+            padding: 1rem;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #D97777;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        h1, h2 {
+            font-weight: 900;
+        }
+        p:last-of-type {
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+        }
+        p {
+            font-weight: 600;
+            padding: 8px;
+            background-color: #F1F2C4;
+        }
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel-images {
+            display: flex;
+        }
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            padding: 3px;
+            border: none;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        ul.custom-list-solid {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.custom-list-solid li {
+            margin: 10px 0;
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+        }
+        ul.custom-list-solid li::before {
+            content: "\25CF";
+            color: black;
+            display: inline-block;
+            width: 1em;
+            margin-right: 0.5em;
+        }
+        ol.decimal-list {
+            list-style-type: decimal;
+            margin-top: 10px;
+            padding-left: 5px;
+        }
+        ol.upper-roman-list {
+            list-style-type: upper-roman;
+            margin-top: 5px;
+            padding-left: 5px;
+        }
+        ul.custom-list-hollow {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.custom-list-hollow li {
+            margin: 3px 0;
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+        }
+        ul.custom-list-hollow li::before {
+            content: "\25CB";
+            color: black;
+            display: inline-block;
+            width: 1em;
+            margin-right: 0.5em;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .section-subtitle {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+        @media (max-width: 1024px) {
+            body {
+                font-size: 15px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            nav.menu-opened ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fernanda López García</h1>
+    </header>
+    <button class="menu-toggle">☰</button>
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <h3 class="section-title">Cosas que me gustan</h3>
+            <h4 class="section-subtitle">Libros de Ficción</h4>
+            <ul class="custom-list-solid">
+                <li>Como agua para chocolate (1989), Laura Esquivel, Novela, Ficción, Romance, Realismo mágico</li>
+                <li>El dragón rojo (1981), Thomas Harris, Novela, Thriller, Crimen, Suspenso, Terror psicológico</li>
+            </ul>
+            <h4 class="section-subtitle">Libros de Drama</h4>
+            <ul class="custom-list-hollow">
+                <li>Lolita (1955), Vladimir Nabokov, Novela, Ficción, Romance, Drama</li>
+                <li>Muerte en Venecia (1912), Thomas Mann, Novela, Ficción, Tragedia, Clásico, Filosofía</li>
+                <li>Las vírgenes suicidas (1993), Jeffrey Eugenides, Novela, Ficción, Drama</li>
+            </ul>
+            <p>Las novelas de terror y drama romántico me fascinan por razones muy diferentes, aunque ambas evocan emociones profundas y experiencias intensas. El terror me atrae por su capacidad para explorar los rincones más oscuros de la psique humana y del mundo que nos rodea. A través del miedo, estas historias nos confrontan con lo desconocido, lo sobrenatural, y a menudo lo siniestro dentro de nosotros mismos. Disfruto de la tensión y la adrenalina que provocan, así como de la habilidad de los autores para crear atmósferas inquietantes y escenarios aterradores que ponen a prueba mi imaginación y mi valentía.
+
+            Por otro lado, el drama romántico ofrece una exploración profunda de las relaciones humanas y las emociones más íntimas. Me encanta cómo estas historias pueden capturar la belleza y la complejidad del amor, la pasión y el sacrificio. El drama romántico me permite conectarme con los personajes de una manera emocionalmente intensa, viviendo sus alegrías y sus penas como si fueran propias. Estas novelas suelen abordar temas universales como la búsqueda de la felicidad, el dolor de la pérdida y la redención a través del amor, lo que las hace resonar profundamente en mi vida personal.
+            </p>
+            <h4 class="section-subtitle">Música Pop</h4>
+            <ol class="decimal-list">
+                <li>Harry Styles</li>
+                <li>Mitsky</li>
+                <li>Melanie Martínez</li>
+                <li>LP</li>
+            </ol>
+            <h4 class="section-subtitle">Música Rock</h4>
+             <ol class="upper-roman-list">
+                <li>Queen</li>
+                <li>David Bowie</li>
+                <li>Franz Ferdinand</li>
+			 <li>Talking Heads</li>
+            </ol>
+            <p>Admiro a aquellos artistas que tienen un enfoque ecléctico y camaleónico en su arte, combinando elementos de diferentes géneros para crear algo completamente nuevo y fresco. 
+Lo que más me cautiva es su habilidad para contar historias a través de sus letras y presentaciones visuales. Estos artistas no solo crean música; construyen mundos enteros que invitan a la reflexión y a la exploración emocional. Sus letras a menudo abordan temas complejos y, a veces, oscuros con un toque de teatralidad usando muchos elementos de la moda, el arte y el cine para complementar su música y crear una experiencia nueva.
+</p>
+        </section>
+        <section id="portafolio">
+            <h2>Portafolio</h2>
+            <div class="carousel">
+                <div class="carousel-images">
+                   
+                    <img src="D:\PAGINA_WEB\IMAGENES\1.jpg" alt="Imagen 1">
+                    <img src="D:\PAGINA_WEB\IMAGENES\1a.jpg" alt="Imagen 2">
+                    <img src="D:\PAGINA_WEB\IMAGENES\10.jpg" alt="Imagen 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.1797560419413!2d-99.18884352611299!3d19.490900638819067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f87772e6a9cd%3A0xb1606de6cf43a38f!2sAzcapotzalco!5e0!3m2!1ses-419!2smx!4v1716332593765!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Puedes contactarme a través de mi correo electrónico: maferlo107@outlook.com</p>
+        </section>
+    </main>
+    <footer>
+        María Fernanda López García
+    </footer>
+
+    <!-- JavaScript para el carrusel -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const carouselImages = document.querySelector(".carousel-images");
+            const prevButton = document.querySelector(".prev");
+            const nextButton = document.querySelector(".next");
+
+            let imageIndex = 0;
+
+            function showImage(index) {
+                carouselImages.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextImage() {
+                if (imageIndex < carouselImages.children.length - 1) {
+                    imageIndex++;
+                    showImage(imageIndex);
+                }
+            }
+
+            function prevImage() {
+                if (imageIndex > 0) {
+                    imageIndex--;
+                    showImage(imageIndex);
+                }
+            }
+
+            nextButton.addEventListener("click", nextImage);
+            prevButton.addEventListener("click", prevImage);
+        });
+    </script>
+</body>
+</html>
+
